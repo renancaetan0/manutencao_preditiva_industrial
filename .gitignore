@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+.Python
+*.egg-info/
+
+# Secrets
+.env
+kaggle.json
+
+# Data e modelos (pesados ou sensíveis)
+data/raw/*
+data/processed/*
+models/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!models/.gitkeep
+
+# Power BI
+*.pbix
+*.pbit
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Guias
+GUIA_COMPLETO_DO_PROJETO*.md
+outros/
+0- dicionario_termos_tecnicos_de_data_scienc*
+01- comandos úteis frequente*
+CLAUDE.md

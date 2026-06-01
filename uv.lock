@@ -13,7 +13,7 @@ resolution-markers = [
 [[package]]
 name = "02-case-manutencao-preditiva-industrial"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "joblib" },
     { name = "kaggle" },

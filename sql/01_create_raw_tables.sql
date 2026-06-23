@@ -50,7 +50,7 @@ CREATE TABLE raw_machines (
 -- TABELA: raw_telemetry
 -- Fonte: PdM_telemetry.csv
 -- Conteúdo: leituras horárias dos 4 sensores de cada máquina
--- Volume: ~8,7 MILHÕES de linhas — esta é a maior tabela do projeto
+-- Volume: 876.100 linhas — esta é a maior tabela do projeto
 -- -------------------------------------------------------
 DROP TABLE IF EXISTS raw_telemetry;
 
@@ -92,7 +92,7 @@ CREATE TABLE raw_telemetry (
   --
   -- Benefício extra: o MySQL cria automaticamente um índice nessa chave composta.
   -- Consultas que filtram por machineID ou por (machineID + datetime) serão
-  -- rápidas mesmo com 8,7 milhões de linhas.
+  -- rápidas mesmo com 876.100 linhas.
   PRIMARY KEY (machineID, datetime)
 
 );
